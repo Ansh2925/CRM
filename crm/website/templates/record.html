@@ -27,6 +27,7 @@
         <strong>Created At: </strong> {{ customer_record.created_at}}
     </h6>
     <a href="{% url 'delete_record' customer_record.id %}" class="btn btn-danger">Delete</a>
+    <a href="{% url 'update_record' customer_record.id %}" class="btn btn-primary">Update</a>
   </div>
 </div>
 {% endblock %}
